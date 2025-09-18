@@ -1675,3 +1675,15 @@ input, select, textarea {
   display: block;   /* ensures centering works */
 }
 
+/* Larger image on smaller screens */
+@media screen and (max-width: 768px) {
+  .image.main img {
+    max-width: 70%;  /* Increase size for tablets/phones */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .image.main img {
+    max-width: 90%;  /* Even larger for small phones */
+  }
+}
