@@ -112,7 +112,7 @@ input, select, textarea {
 /* Type */
 
 	html {
-		font-size: 16pt;
+		font-size: 10pt;
 	}
 
 		@media screen and (max-width: 1680px) {
@@ -1675,15 +1675,20 @@ input, select, textarea {
   display: block;   /* ensures centering works */
 }
 
-/* Larger image on smaller screens */
-@media screen and (max-width: 768px) {
-  .image.main img {
-    max-width: 70%;  /* Increase size for tablets/phones */
-  }
+/* Desktop: limit image to a reasonable desktop width */
+@media (min-width: 992px) {
+  .image.main img { max-width: 40% !important; }   /* desktop size */
+  .image.inside img { max-width: 60% !important; } /* larger inside example */
 }
 
-@media screen and (max-width: 480px) {
-  .image.main img {
-    max-width: 90%;  /* Even larger for small phones */
-  }
+/* Tablet */
+@media (max-width: 991px) and (min-width: 481px) {
+  .image.main img { max-width: 70% !important; }
+  .image.inside img { max-width: 85% !important; }
+}
+
+/* Mobile (small phones) */
+@media (max-width: 480px) {
+  .image.main img { max-width: 90% !important; }
+  .image.inside img { max-width: 95% !important; }
 }
