@@ -1660,7 +1660,6 @@ input, select, textarea {
 			opacity: 0;
 		}
 		
-/* Resize main images without breaking template */
 .image.main img {
   max-width: 30%;   /* controls width relative to container */
   height: auto;     /* keeps aspect ratio */
@@ -1675,15 +1674,11 @@ input, select, textarea {
   display: block;   /* ensures centering works */
 }
 
-/* === Responsive image override - put this at the end of your CSS === */
-
-/* Make sure the .image container can expand */
 span.image, .image {
   width: 100% !important;
   display: block !important;
 }
 
-/* Base rule: image should be able to grow up to container width */
 .image.main img,
 .image.inside img,
 .profile-block img {
@@ -1696,8 +1691,8 @@ span.image, .image {
 
 /* Desktop: limit image to a reasonable desktop width */
 @media (min-width: 992px) {
-  .image.main img { max-width: 40% !important; }   /* desktop size */
-  .image.inside img { max-width: 100% !important; } /* larger inside example */
+  .image.main img { max-width: 40% !important; } 
+  .image.inside img { max-width: 100% !important; }
 }
 
 /* Tablet */
