@@ -69,23 +69,30 @@
 						<!-- Research -->
 							<article id="research">
 								<h2 class="major">Research</h2>
+								<p> Here, I briefly describe my past and ongoing research, listed from the most recent. </p>
+								
 								<h3 class="major">Muon Tomography Simulation</h3>
-								<p> Muons are fundamental particles naturally formed when protons from outer space collide with atoms or molecules in Earth’s atmosphere. They have remarkable penetrating power and capable of passing through materials for several kilometers. As muons travel through matter, they will lose energy, and this energy loss can be used to estimate the density of the material they traverse.</p>
-								<p> My current research focuses on using muons as an imaging tool, particularly for evaluating mineral scaling inside geothermal pipes. I run simulations using GEANT4 and reconstruct the data with the PoCA algorithm. Recently, I have been developing a reconstruction method using machine learning, as PoCA relies on a very simple assumption, that muons scatter at only a single point. Neural networks, on the other hand, allow me to explore more complex scattering behaviors by training on data that includes the true scattering points.</p>
-								<span class="image inside"><img src="images/resc_sim.png" alt="Simulation setup in GEANT4" /></span>
-								<p> Simulation setup in GEANT4: the object represents geothermal pipes with mineral scaling shown in magenta. Muons are generated from a source placed above the object (yellow), and two detector sets are used to record the incoming and outgoing muons. </p>
+								<p> Muon tomography has been developed as a non-invasive imaging technique that utilizes the natural flux of cosmic-ray muons and their multiple scattering behavior when passing through matter. In my masters' research, I use muons as an imaging tool to study mineral scaling inside geothermal and oil pipes. I simulate the system using GEANT4, reconstruct muon trajectories with the point-of-closest-approach (PoCA) algorithm, and process the images through voxelization and filtering. I am currently also exploring neural network–based reconstruction using Keras as an alternative to PoCA algorithm. </p>
+								<span class="image inside"><img src="images/schematic_scatter.png" alt="Schematic simulation of muon tomography in GEANT4" /></span>
+								<p> Simulation setup in GEANT4 and the schematic of multiple scattering. </p>
+
+								<h3 class="major">Baryonic Tully Fisher Relation (BTFR)</h3>
+								<p> In my undergraduate final project, I explored the relationship between baryonic matter and the rotation velocity of spiral galaxies. I used observational data from the <a href="https://astroweb.case.edu/SPARC/" > SPARC database </a> and simulation data from the <a href="https://icc.dur.ac.uk/Eagle/database.php" > EAGLE simulation </a>. I fitted the linear relation using the markov-chain-monte-carlo (MCMC) algorithm implemented with the emcee package in Python, and searched for the tightest BTFR across different characteristic radii. The simulation data I used is available on my <a https://github.com/cuilandebu/EAGLE-rotation-curve-data > GitHub page</a>.
+								</p>
 							</article>
 						
 						<!-- Articles -->
 							<article id="articles">
-								<h2 class="major">Research Projects</h2>
-								<ul>
-									<li> Bachelor's final project, <a href="docs/bsc_final-project.pdf" target="_blank" rel="noopener"> The Dependence of the Baryonic Tully-Fisher Relation on Galaxy Rotation Velocity at Various Characteristic Radii </a> </li>
-								</ul>
-								
-								<h2 class="major">Pesentations</h2>
+															
+								<h2 class="major">Presentations</h2>
 								<ul>
 									<li>November 2025, <b>5th International Conference on Sustainable Infrastructure and Built Environment (SIBE 2025)</b>, Faculty of Civil and Engineering, Institut Teknologi Bandung, Indonesia, "Utilizing Cosmic Muography to Evaluate Scaling in Geothermal Pipelines"</li>
+								</ul>
+
+								<h2 class="major">Portfolio</h2>
+								<ul>
+									<li> Bachelor's final project, <a href="docs/bsc_final-project.pdf" target="_blank" rel="noopener"> The Dependence of the Baryonic Tully-Fisher Relation on Galaxy Rotation Velocity at Various Characteristic Radii </a> </li>
+									<li> <a href="docs/portfolio_outreach.pdf" target="_blank" rel="noopener"> Public outreach activity </a> </li>
 								</ul>
 								
 								<h2 class="major">Astronomy Articles</h2>
@@ -384,6 +391,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 	</body>
 </html>
+
 
 
 
